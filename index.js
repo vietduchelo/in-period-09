@@ -16,6 +16,6 @@ app.use(express.static('public'));
 app.use('/users', userRouter());
 app.use('/auth', authRouter());
 app.use(errorHandler.errorHandler());
-app.listen(8081, function () {
+app.listen(process.env.PORT || 8081, function () {
     console.log("Ung dung Node.js dang lang nghe tai dia chi: http://localhost:8081");
 })
