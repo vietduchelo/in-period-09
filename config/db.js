@@ -3,5 +3,5 @@ module.exports = {
     dbConnect: dbConnect
 }
 function dbConnect() {
-    mongoose.connect('mongodb://localhost:27017/NodeJSBasic');
+    mongoose.connect('mongodb://nodejsbasic:123@ds119820.mlab.com:19820/nodejsbasic');
 }
